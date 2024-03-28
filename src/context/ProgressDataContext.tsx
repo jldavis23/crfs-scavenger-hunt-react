@@ -1,5 +1,9 @@
 'use client'
 import { createContext, useState, useEffect, Dispatch, SetStateAction } from "react"
+import sustainIcon from "../assets/images/icons/SP_sustainability_icon.svg"
+import historyIcon from "../assets/images/icons/SP_history_icon.svg"
+import geologyIcon from "../assets/images/icons/SP_geology_icon.svg"
+import astronomyIcon from "../assets/images/icons/SP_astronomy_icon.svg"
 
 export interface Tag {
     name: string
@@ -19,28 +23,28 @@ const initialProgressData: ProgressData = {
         completed: false, 
         description: 'Location 1', 
         hint: 'Did you check the right side of the CRFS sign?', 
-        icon: 'src/assets/images/icons/SP_sustainability_icon.svg' 
+        icon: sustainIcon
     },
     history: { 
         name:'history', 
         completed: false, 
         description: 'Location 2', 
         hint: 'Did you check the right side of the CRFS sign?', 
-        icon: 'src/assets/images/icons/SP_history_icon.svg'
+        icon: historyIcon
     },
     geology: { 
         name: 'geology', 
         completed: false, 
         description: 'Location 3', 
         hint: 'Did you check the right side of the CRFS sign?', 
-        icon: 'src/assets/images/icons/SP_geology_icon.svg' 
+        icon: geologyIcon
     },
     astronomy: { 
         name: 'astronomy', 
         completed: false, 
         description: 'Location 4', 
         hint: 'Did you check the right side of the CRFS sign?', 
-        icon: 'src/assets/images/icons/SP_astronomy_icon.svg' 
+        icon: astronomyIcon
     }
 }
 

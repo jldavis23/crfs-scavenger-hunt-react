@@ -5,8 +5,8 @@ import { Crossword } from '../components/Crossword';
 import { HuntCompleteModal } from '../components/HuntCompleteModal';
 // IMAGES
 import astroDarkSky from "../assets/images/taskImages/SP_Astro_Dark_Sky.webp"
-import astroLightPollution from "..assets/images/taskImages/SP_Astro_Light_Pollution.webp"
-import astroNight from "..assets/images/taskImages/SP_Astro_Night.webp"
+import astroLightPollution from "../assets/images/taskImages/SP_Astro_Light_Pollution.webp"
+import astroNight from "../assets/images/taskImages/SP_Astro_Night.webp"
 
 export type Cell = string | null
 
