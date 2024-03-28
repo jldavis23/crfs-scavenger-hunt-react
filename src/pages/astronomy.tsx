@@ -1,9 +1,12 @@
 'use client'
-// TAG 4
 import { useContext, useState, useEffect } from 'react';
 import { ProgressDataContext } from '../context/ProgressDataContext';
 import { Crossword } from '../components/Crossword';
 import { HuntCompleteModal } from '../components/HuntCompleteModal';
+// IMAGES
+import astroDarkSky from "../assets/images/taskImages/SP_Astro_Dark_Sky.webp"
+import astroLightPollution from "..assets/images/taskImages/SP_Astro_Light_Pollution.webp"
+import astroNight from "..assets/images/taskImages/SP_Astro_Night.webp"
 
 export type Cell = string | null
 
@@ -105,19 +108,19 @@ export default function AstronomyPage() {
         <main className="p-5 flex flex-col gap-5 max-w-[600px] m-auto">
             <h1 className='font-bold text-[35px]'>Astronomy</h1>
 
-            <img src="src/assets/images/taskImages/SP_Astro_Dark_Sky.webp" alt="the milky way behind a mountain" className='rounded-3xl' />
+            <img src={astroDarkSky} alt="the milky way behind a mountain" className='rounded-3xl' />
 
             <h2 className='font-bold text-[30px]'>Dark Sky</h2>
 
             <p className='text-[15px]'>Our visitors are treated with wonderfully dark skies that can be enjoyed with the naked eye, and also with our telescopes, including a 12-inch Dobsonian. In 2015, Capitol Reef National Park was designated as an international dark sky park. It offers excellent night-sky viewing.</p>
 
-            <img src="src/assets/images/taskImages/SP_Astro_Light_Pollution.webp" alt="the Capitol Reef Field Station under a dark sky" className='rounded-3xl' />
+            <img src={astroLightPollution} alt="the Capitol Reef Field Station under a dark sky" className='rounded-3xl' />
 
             <h2 className='font-bold text-[30px]'>Light Pollution</h2>
 
             <p className='text-[15px]'>At the field station, we strive to minimize light pollution. We have limited, low-wattage, downward-facing external lighting. All windows are equipped with blinds that are closed at night to reduce the amount of light that leaks from buildings into the environment. </p>
 
-            <img src="src/assets/images/taskImages/SP_Astro_Night.webp" alt="the milky way as seen from Capitol Reef" className='rounded-3xl' />
+            <img src={astroNight} alt="the milky way as seen from Capitol Reef" className='rounded-3xl' />
 
             <h2 className='font-bold text-[30px]'>The Night Sky</h2>
 
