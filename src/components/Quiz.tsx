@@ -38,7 +38,7 @@ export const Quiz = ({ quiz, setQuiz, quizCompleted, setQuizCompleted }: QuizPro
 
 
     useEffect(() => {
-        quiz.forEach((question, i) => {
+        quiz.forEach((_, i) => {
             setUserAnswers(prevAnswers => ({
                 ...prevAnswers,
                 [i]: null
