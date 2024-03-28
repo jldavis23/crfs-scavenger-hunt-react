@@ -1,25 +1,32 @@
 'use client'
+import crfsLogo from "../assets/images/logos/crfs-logo.png"
+import uvuLogo from "../assets/images/logos/uvu-dgm-logo.png"
+import iconChip from "../assets/images/iconChip.jpg"
+import scanExample from "../assets/images/scan-example.gif"
+import readInfo from "../assets/images/read-info.gif"
+import homePage from "../assets/images/homePage.jpg"
+
 
 export default function InstructionsPage() {
     const instructions: {text: string, imagePath: string, alt: string}[] = [
         {
             text: 'Search inside the field station for small white tags with icons attached to the walls.',
-            imagePath: 'src/assets/images/iconChip.jpg',
+            imagePath: iconChip,
             alt: 'An example of a tag'
         },
         {
             text: 'When you have located a tag, place your phone over the tag to bring up a new webpage.',
-            imagePath: 'src/assets/images/scan-example.gif',
+            imagePath: scanExample,
             alt: 'GIF demonstrating how to scan the tag'
         },
         {
             text: 'Read the information on the page and complete the activity.',
-            imagePath: 'src/assets/images/read-info.gif',
+            imagePath: readInfo,
             alt: 'GIF showing an example of a scavenger hunt page'
         },
         {
             text: 'Look for more tags! Your progress will be tracked in the progress bar at the top of the screen as well as the home page. (Hint: the icon on the home page corresponds to the icon on the tag)',
-            imagePath: 'src/assets/images/homePage.jpg',
+            imagePath: homePage,
             alt: 'screenshot of the home page with the progress bar at the top and tags to find listed below, each with a corresponding icon'
         },
         {
@@ -43,8 +50,8 @@ export default function InstructionsPage() {
         <main className="bg-primary">
             <div className="p-5 flex flex-col gap-10 text-white max-w-[600px] m-auto">
                 <div className='flex gap-5 justify-between'>
-                    <figure><img src='src/assets/images/logos/crfs-logo.png' alt='CRFS Logo' className="w-20" /></figure>
-                    <figure><img src='src/assets/images/logos/uvu-dgm-logo.png' alt="UVU DGM Logo" className="w-32" /></figure>
+                    <figure><img src={crfsLogo} alt='CRFS Logo' className="w-20" /></figure>
+                    <figure><img src={uvuLogo} alt="UVU DGM Logo" className="w-32" /></figure>
                 </div>
 
                 <div className="flex flex-col gap-4">
