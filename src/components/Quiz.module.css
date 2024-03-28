@@ -1,0 +1,15 @@
+.quizChoice:checked {
+    @apply bg-info !important;
+    @apply border-secondary !important;
+    @apply text-info-content !important;
+}
+
+.choiceCorrect {
+    @apply bg-success !important;
+    @apply border-[#3F532B] !important;
+}
+
+.choiceIncorrect {
+    @apply bg-error !important;
+    @apply border-[#CA0000] !important;
+}

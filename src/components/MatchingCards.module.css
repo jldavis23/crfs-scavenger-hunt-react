@@ -1,0 +1,43 @@
+.scene {
+  perspective: 600px;
+  height: 110px;
+  width: 110px;
+  display: inline-block;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s, opacity 0.5s ease, visibility 0.5s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card.matched {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cardFace {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  background-color: #dbdfd6;
+}
+
+.front {
+  background-color: #aebdf8;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
