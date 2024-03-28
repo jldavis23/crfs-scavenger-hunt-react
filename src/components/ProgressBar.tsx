@@ -3,6 +3,7 @@ import { useContext, useRef, useEffect } from 'react'
 import { ProgressDataContext } from '../context/ProgressDataContext'
 import gsap from "gsap";
 import { useNavigate } from 'react-router-dom';
+import homeIcon from '../assets/images/icons/SP_Home_Icon.svg'
 
 export const ProgressBar = () => {
   // VARIABLES
@@ -29,7 +30,7 @@ export const ProgressBar = () => {
     <section className='bg-white shadow w-full fixed top-0 min-h-[86px] z-50'>
       <div className="flex gap-3 p-4 max-w-[600px] m-auto">
         <div className='flex gap-2'>
-          <a href="/" className='btn btn-circle'><img src="src/assets/images/icons/SP_Home_Icon.svg" alt="Home"/></a>
+          <a href="/" className='btn btn-circle'><img src={homeIcon} alt="Home"/></a>
         </div>
         <div className='w-full'>
 
