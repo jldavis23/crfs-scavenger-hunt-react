@@ -16,19 +16,16 @@ export const MatchingCards = ({ cards, setCards, matchingCompleted, setMatchingC
 
     // Shuffle the cards array on first render
     useEffect(() => {
-        const arr: Card[] = [...cards]
+        const cardArr: Card[] = [...cards]
+        const shuffledCards: Card[] = []
 
-        let currIndex: number = arr.length
-        let randomIndex: number
-
-        while (currIndex > 0) {
-            randomIndex = Math.floor(Math.random() * currIndex)
-            currIndex--
-
-            [arr[currIndex], arr[randomIndex]] = [arr[randomIndex], arr[currIndex]]
+        while (cardArr.length > 0) {
+            const randomIndex: number = Math.floor(Math.random() * cardArr.length)
+            const randomCard: Card = cardArr.splice(randomIndex, 1)[0]
+            shuffledCards.push(randomCard)
         }
 
-        setCards(arr)
+        setCards(shuffledCards)
     }, [])
 
     // Run this every time the cards array is updated

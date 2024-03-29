@@ -43,7 +43,7 @@ export default function Home() {
           ) : (
             <div className="bg-neutral text-center p-3 rounded-lg font-medium">
               <p className="font-bold mb-2">You have found all the tags and completed the scavenger hunt!</p>
-              <a href="/huntcompleted" className="link">See certificate →</a>
+              <a href="/?page=huntcompleted" className="link">See certificate →</a>
             </div>
           )
         ) : (
@@ -68,7 +68,7 @@ export default function Home() {
                   <p className="text-[15px]" >{progressData !== null ? progressData[tag].description : ''}</p>
                 </div>
                 
-                <a href={`/${progressData !== null ? progressData[tag].name : ''}`} className="btn btn-ghost text-primary-content">VIEW</a>
+                <a href={`/?page=${progressData !== null ? progressData[tag].name : ''}`} className="btn btn-ghost text-primary-content">VIEW</a>
               </div>
             ))
           ) : (
