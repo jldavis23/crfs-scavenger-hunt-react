@@ -21,29 +21,29 @@ const initialProgressData: ProgressData = {
     sustainability: { 
         name: 'sustainability', 
         completed: false, 
-        description: 'Location 1', 
-        hint: 'Did you check the right side of the CRFS sign?', 
+        description: 'Tag 1', 
+        hint: 'Did you check below the solar panels?', 
         icon: sustainIcon
     },
     history: { 
         name:'history', 
         completed: false, 
-        description: 'Location 2', 
-        hint: 'Did you check the right side of the CRFS sign?', 
+        description: 'Tag 2', 
+        hint: 'Did you look by the books?', 
         icon: historyIcon
     },
     geology: { 
         name: 'geology', 
         completed: false, 
-        description: 'Location 3', 
-        hint: 'Did you check the right side of the CRFS sign?', 
+        description: 'Tag 3', 
+        hint: 'Did you take a picture of the landscape?', 
         icon: geologyIcon
     },
     astronomy: { 
         name: 'astronomy', 
         completed: false, 
-        description: 'Location 4', 
-        hint: 'Did you check the right side of the CRFS sign?', 
+        description: 'Tag 4', 
+        hint: 'Did the check the classroom?', 
         icon: astronomyIcon
     }
 }

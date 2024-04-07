@@ -10,12 +10,12 @@ import homePage from "../assets/images/homePage.jpg"
 export default function InstructionsPage() {
     const instructions: {text: string, imagePath: string, alt: string}[] = [
         {
-            text: 'Search inside the field station for small white tags with icons attached to the walls.',
+            text: 'Search around the field station for small white tags with icons.',
             imagePath: iconChip,
             alt: 'An example of a tag'
         },
         {
-            text: 'When you have located a tag, place your phone over the tag to bring up a new webpage.',
+            text: 'When you have located a tag, place your phone over the tag to bring up a new webpage. Hold your phone flat against the tag for a few seconds.',
             imagePath: scanExample,
             alt: 'GIF demonstrating how to scan the tag'
         },

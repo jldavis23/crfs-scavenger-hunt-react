@@ -22,11 +22,15 @@ How the scavenger hunt works:
 ### Pages
 - [Home](https://crfs.mybolt.io/?page=home)
 - [Instructions](https://crfs.mybolt.io/?page=instructions) (This is the page the user will see when they scan the QR code)
+- [Scavenger Hunt Completed](https://crfs.mybolt.io/?page=huntcompleted)
+
+Each page below is accessible through the user scanning an NFC chip:
+
 - [Sustainability](https://crfs.mybolt.io/?page=sustainability) 
 - [History](https://crfs.mybolt.io/?page=history)
 - [Geology](https://crfs.mybolt.io/?page=geology)
 - [Astronomy](https://crfs.mybolt.io/?page=astronomy)
-- [Scavenger Hunt Completed](https://crfs.mybolt.io/?page=huntcompleted)
+
 
 ## Code Overview
 
@@ -61,7 +65,7 @@ The routing functionality for this project is based on URL query parameters. Thi
 
 This means each of the URLs that take the users to the individual activity pages ends like this: `/?page=pageName`. For example, the astronomy page url looks like this: `https://crfs.mybolt.io/?page=astronomy`
 
-The code that creates this routing functionality resides in `App.tsx`.
+The code that creates this routing functionality resides in `src/App.tsx`.
 
 ### Tracking the User's Progress
 The user's progress is stored in the browser's `localStorage`. This allows for the progress to be maintained across different pages. 
