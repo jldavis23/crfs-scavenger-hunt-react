@@ -19,22 +19,6 @@ export const Quiz = ({ quiz, setQuiz, quizCompleted, setQuizCompleted }: QuizPro
 
     // Shuffles the question choices for each question
     useEffect(() => {
-        // const arr: QuizQuestion[] = [...quiz]
-
-        // arr.forEach((question: QuizQuestion) => {
-        //     let currIndex: number = question.choices.length
-        //     let randomIndex: number
-
-        //     while (currIndex > 0) {
-        //         randomIndex = Math.floor(Math.random() * currIndex)
-        //         currIndex--
-
-        //         [question.choices[currIndex], question.choices[randomIndex]] = [question.choices[randomIndex], question.choices[currIndex]]
-        //     }
-        // })
-
-        // setQuiz(arr)
-
         const shuffledQuiz: QuizQuestion[] = [...quiz]
 
         shuffledQuiz.forEach((question: QuizQuestion) => {
