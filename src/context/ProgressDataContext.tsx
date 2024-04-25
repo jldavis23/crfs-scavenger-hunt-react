@@ -43,7 +43,7 @@ const initialProgressData: ProgressData = {
         name: 'astronomy', 
         completed: false, 
         description: 'Tag 4', 
-        hint: 'Did the check the classroom?', 
+        hint: 'Did you check the classroom?', 
         icon: astronomyIcon
     }
 }

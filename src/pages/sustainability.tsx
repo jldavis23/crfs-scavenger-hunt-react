@@ -87,7 +87,7 @@ export default function SustainabilityPage() {
 
             <h2 className='font-bold text-[30px]'>Electricity</h2>
 
-            <p className='text-[15px]'>The field station produces its own electricity through 72,200 watt solar panels. The panels produce DC power which is then stored in a bank of lithium-ion batteries (see image above) and is converted to AC power to use on demand.</p>
+            <p className='text-[15px]'>The field station produces its own electricity through 72 200 watt solar panels. The panels produce DC power which is then stored in a bank of lithium-ion batteries (see image above) and is converted to AC power to use on demand.</p>
 
             <img src={enviroHeatCool} alt="Trombe walls" className='rounded-3xl' />
 
