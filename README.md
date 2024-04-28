@@ -10,7 +10,7 @@ The CRFS project is built with several technologies:
 - **Website** (Built with React + Typescript and TailwindCSS + DaisyUI.)
 
 How the scavenger hunt works:
-1. The user scans the QR code to connect to the Smart Beacon/Bolt server. Then, they scan the next QR code to pull up the instructions page.
+1. The user scans the QR code to connect to the Smart Beacon/Bolt server. Then, they scan the first NFC chip to pull up the instructions page.
 2. The user looks around the field station for NFC chips. When they find one, they scan the chip to pull up the associated web page. They read the information and complete the activity. 
 3. Repeat until all the chips are found and all activities completed.
 4. When all activities are completed, the user recieves a prize from the site manager. 
