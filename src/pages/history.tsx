@@ -5,7 +5,7 @@ import { ProgressDataContext } from '../context/ProgressDataContext'
 import { Quiz } from '../components/Quiz'
 import { HuntCompleteModal } from '../components/HuntCompleteModal'
 // IMAGES
-import histExpedition from "../assets/images/taskImages/SP_History_Expedition.webp"
+import histExpedition from "../assets/images/taskImages/SP_History_Expedition.jpg"
 import histOrchards from "../assets/images/taskImages/SP_History_Orchards.webp"
 import histSchool from "../assets/images/taskImages/SP_History_School.webp"
 
@@ -24,20 +24,20 @@ export default function HistoryPage() {
     const [quizCompleted, setQuizCompleted] = useState<boolean | null>(null)
     const [quiz, setQuiz] = useState<QuizQuestion[]>([
         {
-            question: 'What year was the expedition that came near Capitol Reef?',
+            question: 'Who named the Waterpocket Fold?',
             choices: [
-                { label: '1776', isCorrect: true },
-                { label: '1780', isCorrect: false },
-                { label: '1783', isCorrect: false },
-                { label: '1775', isCorrect: false }
+                { label: 'Almon H. Thompson', isCorrect: true },
+                { label: 'Elijah Behumim', isCorrect: false },
+                { label: 'J.A. Call', isCorrect: false },
+                { label: 'John Wesley Powell', isCorrect: false }
             ]
         },
         {
-            question: 'What did the orchards consist of?',
+            question: 'How many acres of orchard had Nels Johnson planted by the turn of the century?',
             choices: [
-                { label: 'apples, peaches, pears, and plums', isCorrect: true },
-                { label: 'cherries, mangoes, and apricots', isCorrect: false },
-                { label: 'carrots, potatoes, and lettuce', isCorrect: false }
+                { label: '11', isCorrect: true },
+                { label: '9', isCorrect: false },
+                { label: '30', isCorrect: false }
             ]
         },
         {
@@ -83,23 +83,23 @@ export default function HistoryPage() {
         <main className="p-5 flex flex-col gap-5 max-w-[600px] m-auto">
             <h1 className='font-bold text-[35px]'>History</h1>
 
-            <img src={histExpedition} alt="painting of the Dominguez Escalante Expedition" className='rounded-3xl' />
+            <img src={histExpedition} alt="Almon H. Thompson on a horse" className='rounded-3xl' />
 
-            <h2 className='font-bold text-[30px]'>Dominguez Escalante Expedition</h2>
+            <h2 className='font-bold text-[30px]'>John Wesley Powell Expeditions</h2>
 
-            <p className='text-[15px]'>Their 1776 expedition came close to the area known today as Capitol Reef. Throughout their journey they wrote detailed journals on the difficult terrain, scarcity of resources, and interactions with the Ute tribes.</p>
+            <p className='text-[15px]'>In 1871, J.A. Call and Wal. Bateman became the earliest known Euro-Americans to traverse Capitol Reef, leaving their names and the date etched in Capitol Gorge. A year later, Almon H. Thompson led a geographical expedition for John Wesley Powell, exploring the region more extensively. They descended from Boulder Mountain, encountering rugged terrain. Thompson named the large geologic monocline the “Waterpocket Fold” due to its many waterpockets.</p>
 
             <img src={histOrchards} alt="an orchard of trees with pink blossoms" className='rounded-3xl' />
 
             <h2 className='font-bold text-[30px]'>Orchards</h2>
 
-            <p className='text-[15px]'>Nels Johnson and Ephraim Hanks moved into Capitol Reef and claimed the land. In 1880 Johnson planted the first orchards of apples, peaches, pear, plums, walnut, and almond trees.</p>
+            <p className='text-[15px]'>Capitol Reef is famous for its historic orchards. Nels Johnson, the first landholder of record in Fruita, had planted 11 acres of orchard by the turn of the century. Fruita was perfect for these orchards because of its long growing season, lower elevation, and easy access to water from the Fremont River. Today, the orchards are managed by the National Park Service and visitors to Capitol Reef can pick their own fruit when it's in season.</p>
 
             <img src={histSchool} alt="the Fruita School house" className='rounded-3xl' />
 
             <h2 className='font-bold text-[30px]'>Fruita School House</h2>
 
-            <p className='text-[15px]'>Behumim donated land for the Schoolhouse that was completed in 1896. HIs daughter, 12 at the time, was the school's first teacher. The school remained open until 1941 but still stands at Capitol Reef.</p>
+            <p className='text-[15px]'>Elijah Behumim donated land for the Fruita schoolhouse, which was completed in 1896. His 12-year-old daughter, Nettie, became its first teacher. The school remained open until 1941, and the building still stands at Capitol Reef.</p>
 
             <h3 className='font-bold text-[23px] text-center mt-6'>Test Your Knowledge</h3>
 

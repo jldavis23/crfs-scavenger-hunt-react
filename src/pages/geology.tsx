@@ -180,13 +180,13 @@ export default function GeologyPage() {
 
             <h2 className='font-bold text-[30px]'>Deposition</h2>
 
-            <p className='text-[15px]'>From the Field Station the visible layers are the red and tan Wingate cliffs, the Kayenta (where plants grow more easily), and the Navajo Sandstone (tan and white rounded slopes). Wingate Sandstone is cliff-forming and develops many vertical cracks in it. Above the Wingate (and therefore younger) is the Kayenta Formation. The youngest rock layer visible from Pleasant Creek is the Navajo Sandstone, the tan or white rounded domes above the Kayenta. The layers visible in Pleasant Creek are all Jurassic (200-145 MYA).</p>
+            <p className='text-[15px]'>Rock layers reveal ancient environments, with characteristics like texture and color indicating past conditions when the layers formed. When studying geology and looking at rock layers, the oldest rocks are at the bottom, and the youngest rocks are at the top. Many layers of rock are visible from the Field Station, but the most prevalent are (from oldest to youngest) the Moenkopi Formation, the Chinle Formation, the red and tan Wingate sandstone, the Kayenta Formation (where plants grow more easily), and the Navajo Sandstone (white rounded domes).</p>
 
             <img src={geoUplift} alt="the Waterpocket fold" className='rounded-3xl' />
 
             <h2 className='font-bold text-[30px]'>Uplift</h2>
 
-            <p className='text-[15px]'>Most of the Colorado Plateau was uplifted uniformly, but in Capitol Reef, an ancient bedrock fault was reactivated and caused an uplift higher on the west side than the east. This nearly 100-mile long uplift is called the Waterpocket Fold, named by the Powell Expedition.</p>
+            <p className='text-[15px]'>Most of the Colorado Plateau was uplifted uniformly, but in Capitol Reef, an ancient bedrock fault was reactivated which caused an uplift higher on the west side than the east. This nearly 100-mile-long uplift is called the Waterpocket Fold, named by the Powell Expedition.</p>
 
             <p className='text-[15px]'>The name Waterpocket Fold comes from the many water pockets, depressions which often form in the sandstone layers, that fill with rainwater and snowmelt. For the early explorers, the waterpockets were essential to their travel, since they were in a land that was new to them. Fold refers to the eroded monocline, a fold or wrinkle in the earth's crust. The Waterpocket Fold is so large that it can be seen from the International Space Station!</p>
 
@@ -194,11 +194,9 @@ export default function GeologyPage() {
 
             <h2 className='font-bold text-[30px]'>Erosion</h2>
 
-            <p className='text-[15px]'>The rock layers of Capitol Reef were deposited hundreds of millions of years ago, yet geology is an ongoing process. Erosion is visible in every flash flood and rockfall.</p>
+            <p className='text-[15px]'>The Waterpocket Fold eroded primarily 20-15 million years ago, mainly by water rather than wind, which is a more potent erosional force. Human activities like open pit mining can also contribute to erosion. Despite rock layers in Capitol Reef forming millions of years ago, ongoing erosion is evident through events like flash floods and rockfalls.</p>
 
-            <p className='text-[15px]'>You might have noticed the many black boulders scattered throughout Pleasant Creek, they are basalt and andesite boulders, volcanic or igneous rock. About 20 million years ago, lava came to the surface of the earth and filled in low-lying areas, which are now the high points of Boulder and Thousand Lake mountains.</p>
-
-            <p className='text-[15px]'>Visible to the east of the field station, in the gap created by Pleasant Creek, sits another outcrop of igneous the rock, the Henry Mountains.</p>
+            <p className='text-[15px]'>You might have noticed the many black boulders scattered throughout Pleasant Creek, mostly made of basalt, which is a type of volcanic or igneous rock. They formed about 20 million years ago when lava filled low spots, creating the high points of Boulder and Thousand Lake mountains. These mountains, capped with tough volcanic rock, survived while other areas eroded away. In the last 200,000 to 100,000 years, massive landslides carried the boulders into Capitol Reef, where erosion and waterways like Pleasant Creek shaped them into mesas and terraces.</p>
 
             <h3 className='font-bold text-[23px] text-center mt-6'>Play the Matching Game</h3>
 

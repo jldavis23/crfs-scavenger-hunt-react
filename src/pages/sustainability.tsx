@@ -44,9 +44,9 @@ export default function SustainabilityPage() {
         {
             question: 'On average, how much rain does Capitol Reef get each year?',
             choices: [
-                { label: 'Less than 8"', isCorrect: true },
-                { label: 'Less than 7"', isCorrect: false },
-                { label: 'Less than 4"', isCorrect: false },
+                { label: '7 inches', isCorrect: true },
+                { label: '8 inches', isCorrect: false },
+                { label: '4 inches', isCorrect: false },
             ]
         }
     ])
@@ -87,19 +87,19 @@ export default function SustainabilityPage() {
 
             <h2 className='font-bold text-[30px]'>Electricity</h2>
 
-            <p className='text-[15px]'>The field station produces its own electricity through 72 200 watt solar panels. The panels produce DC power which is then stored in a bank of lithium-ion batteries (see image above) and is converted to AC power to use on demand.</p>
+            <p className='text-[15px]'>The field station produces its own electricity through 72 200-watt solar panels. The panels produce DC power which is then stored in a bank of lithium ferrous phosphate batteries (see image above) and is converted to AC power to use on demand.</p>
 
             <img src={enviroHeatCool} alt="Trombe walls" className='rounded-3xl' />
 
             <h2 className='font-bold text-[30px]'>Heating & Cooling</h2>
 
-            <p className='text-[15px]'>Trombe walls (see image above) capture and release energy depending on the season. These walls face south, are painted black, and must be covered with a pane of glass. This creates air pockets between the wall and glass which can heat up in the Winter and reduce heat in the Summer.</p>
+            <p className='text-[15px]'>Trombe walls (see image above) capture and release energy depending on the season. These walls face south, are painted black, and must be covered with a pane of glass. This creates air pockets between the wall and glass which is heated by the sun in the winter and reduces heat in the summer.</p>
 
             <img src={enviroWaterTank} alt="Water tank" className='rounded-3xl' />
 
             <h2 className='font-bold text-[30px]'>Water</h2>
 
-            <p className='text-[15px]'>The Field Station gets its water from Pleasant Creek using solar power to transport it uphill to the water treatment facility. From there it is then filtered and treated for visitors use. As Capitol Reef National Park receives less than 8” of water each year it is vital to be mindful of water use.</p>
+            <p className='text-[15px]'>The Field Station gets its water from a well near Pleasant Creek using solar power to transport it uphill to the water treatment facility. From there it is filtered and treated for visitors use. As Capitol Reef National Park receives an average of 7 inches of precipitation each year, it is vital to be mindful of water use.</p>
 
             <h3 className='font-bold text-[23px] text-center mt-6'>Test Your Knowledge</h3>
 
